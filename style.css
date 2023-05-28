@@ -122,3 +122,8 @@ input:invalid{
 .submit-section a{
     color: #596D48;
 }
+
+#error{
+    color: rgb(200, 75, 0);
+    padding: 0;
+}
