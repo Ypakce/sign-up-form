@@ -1,130 +1,131 @@
 @font-face {
-    font-family: Norse-bold;
-    src: url(font/Norse-Bold.otf);
+  font-family: Norse-bold;
+  src: url(font/Norse-Bold.otf);
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
 
-.photo{
-    background-image: url(pictures/halie-west-25xggax4bSA-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 40vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
+.photo {
+  background-image: url(pictures/halie-west-25xggax4bSA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
 }
 
-.logo{
-    height: calc(20vh + 20px);
-    margin-top: 20vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Norse-bold;
-    font-size: 3rem;
-    width: 100%;
+.logo {
+  height: calc(20vh + 20px);
+  margin-top: 20vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Norse-bold;
+  font-size: 3rem;
+  width: 100%;
 }
 
-.logo img{
-    height: 20vh;
+.logo img {
+  height: 20vh;
 }
 
-.photo a{
-    color: white;
+.photo a {
+  color: white;
+}
+/* */
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 60vw;
 }
 
-.form-section{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 60vw;
+.first-paragraph {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgb(240, 240, 240);
+  padding: 2vw;
 }
 
-.first-paragraph{
-    font-weight: bold;
-    font-size: 1.2rem;
-    background-color: rgb(240,240,240);
-    padding: 2vw;
+.form-box {
+  width: 100%;
+  box-shadow: 3px 3px 3px #aaaaaa;
 }
 
-.form-box{
-    width: 100%;
-    box-shadow: 3px 3px 3px #aaaaaa;
+.form-box p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 2vh 2vw;
+  font-weight: bold;
 }
 
-.form-box p{
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 2vh 2vw;
-    font-weight: bold;
+.form-box form {
+  display: flex;
 }
 
-.form-box form{
-    display: flex;
+form div {
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 2vw;
 }
 
-form div{
-    display: flex;
-    flex-direction: column;
-    padding: 3vh 2vw;
+label {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
 }
 
-label{
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: 0.9rem;
+  margin: 5px 0 15px;
 }
 
-input{
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid rgb(224, 224, 224);
-    font-size: .9rem;
-    margin: 5px 0 15px;
+input:valid {
+  outline: none;
+  border: 1px solid rgb(0, 75, 200);
 }
 
-input:valid{
-    outline: none;
-    border: 1px solid rgb(0, 75, 200);
+input:invalid {
+  outline: none;
+  border: 1px solid rgb(200, 75, 0);
 }
 
-input:invalid{
-    outline: none;
-    border: 1px solid rgb(200, 75, 0);
+.submit-section {
+  padding: 5vh 2vw;
 }
 
-.submit-section{
-    padding: 5vh 2vw;
+.submit-section button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  background-color: #596d48;
+  border-radius: 10px;
 }
 
-.submit-section button{
-    padding: .8rem 1.5rem;
-    font-size: 1.2rem;
-    border: none;
-    color: white;
-    background-color: #596D48;
-    border-radius: 10px;
+.submit-section button:hover {
+  background-color: rgb(170, 200, 100);
 }
 
-.submit-section button:hover{
-    background-color: rgb(170, 200, 100);
+.submit-section a {
+  color: #596d48;
 }
 
-.submit-section a{
-    color: #596D48;
-}
-
-#error{
-    color: rgb(200, 75, 0);
-    padding: 0;
+#error {
+  color: rgb(200, 75, 0);
+  padding: 0;
 }
